@@ -18,5 +18,9 @@ class kelas extends Model
     public function user(){
         return $this->hasMany(User::class);
     }
+    
+    public function getKelas(){
+        return $this->all();
+    }
 
 }
