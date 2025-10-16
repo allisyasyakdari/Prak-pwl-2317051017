@@ -33,3 +33,9 @@ Route::get('/matakuliah', [MatakuliahController::class, 'index']);
 Route::get('/matakuliah/create', [MatakuliahController::class, 'create'])->name('matakuliah.create');
 
 Route::post('/matakuliah', [MatakuliahController::class, 'store'])->name('matakuliah.store');
+
+Route::get('/matakuliah/{id}/edit', [MataKuliahController::class, 'edit'])->name('matakuliah.edit');
+
+Route::put('/matakuliah/{id}', [MataKuliahController::class, 'update'])->name('matakuliah.update');
+
+Route::delete('/matakuliah/{id}', [MataKuliahController::class, 'destroy'])->name('matakuliah.destroy');
